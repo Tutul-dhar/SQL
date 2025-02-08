@@ -1,0 +1,32 @@
+=> UPPER() / LOWER() → Convert text to uppercase/lowercase
+  SELECT UPPER('hello'), LOWER('WORLD');
+
+=> LENGTH() → Get string length
+  SELECT LENGTH('SQL Learning');
+
+=> SUBSTRING() / LEFT() / RIGHT() → Extract part of a string
+  SELECT SUBSTRING('Database', 2, 3); -- Outputs 'ata'
+  SELECT LEFT('Hello', 2); -- 'He'
+  SELECT RIGHT('Hello', 2); -- 'lo'
+
+=> REPLACE() → Replace text
+  SELECT REPLACE('I love SQL', 'SQL', 'Databases'); -- 'I love Databases'
+
+=> TRIM() / LTRIM() / RTRIM() → Remove spaces
+  SELECT TRIM('  SQL  '); -- 'SQL'
+  SELECT LTRIM('  SQL'); -- 'SQL'
+  SELECT RTRIM('SQL  '); -- 'SQL'
+
+=> Find names starting with 'A'
+  SELECT * FROM users WHERE name REGEXP '^A';
+
+=> Find emails ending with .com
+  SELECT * FROM users WHERE email REGEXP '.com$';
+
+=> Find strings with digits
+  SELECT * FROM products WHERE name REGEXP '[0-9]';
+
+=> Using CONCAT() (Recommended)
+  SELECT CONCAT('Hello', ' ', 'World'); -- Output: 'Hello World'
+
+
