@@ -29,4 +29,9 @@
 => Using CONCAT() (Recommended)
   SELECT CONCAT('Hello', ' ', 'World'); -- Output: 'Hello World'
 
+=> Matching words that start with a specific prefix:
+  SELECT * FROM table_name 
+  WHERE column_name REGEXP '\\bDIAB1';
+
+
 
