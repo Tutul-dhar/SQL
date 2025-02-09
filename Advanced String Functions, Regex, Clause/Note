@@ -33,5 +33,23 @@
   SELECT * FROM table_name 
   WHERE column_name REGEXP '\\bDIAB1';
 
+=> In MySQL, you can use GROUP_CONCAT() to combine multiple column values into a single row 
+  when using GROUP BY. This is useful for aggregating values into a new column.
+  =>first example .. 
+  SELECT department, GROUP_CONCAT(employee_name) AS employees
+  FROM employees
+  GROUP BY department;
+  => second example..(Custom Separator (Use something other than ,))
+  SELECT department, GROUP_CONCAT(employee_name SEPARATOR ' | ') AS employees
+  FROM employees
+  GROUP BY department;
+=> third example...(Using ORDER BY inside GROUP_CONCAT()) 
+  SELECT department, GROUP_CONCAT(employee_name ORDER BY employee_name ASC SEPARATOR ', ') AS employees
+  FROM employees
+  GROUP BY department;
+
+
+
+
 
 
