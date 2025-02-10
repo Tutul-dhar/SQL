@@ -45,7 +45,7 @@
         SELECT * FROM table_name 
         WHERE column_name REGEXP '\\bDIAB1';
 
-- In MySQL, you can use GROUP_CONCAT() to combine multiple column values into a single row 
+- In MySQL, We can use GROUP_CONCAT() to combine multiple column values into a single row 
   when using GROUP BY. This is useful for aggregating values into a new column.
 
   i) First example ... 
