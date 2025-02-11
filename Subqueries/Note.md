@@ -25,6 +25,7 @@ Find users whose salary is higher than the average salary:
 
 - The subquery calculates the average salary.
 - The main query selects users with salaries above that average.
+  
 📌 2. Subquery in SELECT Statement
 
 Find each employee’s salary and how it compares to the company’s average salary:
