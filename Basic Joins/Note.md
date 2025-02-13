@@ -3,7 +3,7 @@
 
 ### Basic JOINs in MySQL
 
-1. INNER JOIN
+### 1. INNER JOIN
 
 - Returns only the matching rows from both tables.
 - Used when: We need only related data from both tables.
@@ -12,7 +12,7 @@
         FROM students
         INNER JOIN classes ON students.class_id = classes.class_id;
 
-2. LEFT JOIN
+### 2. LEFT JOIN
 - Returns all rows from the left table and matching rows from the right table (NULL if no match).
 - Used when: We want all records from the left table, even if there's no match in the right table.
 
@@ -20,7 +20,7 @@
         FROM students
         LEFT JOIN classes ON students.class_id = classes.class_id;
 
-3. RIGHT JOIN
+### 3. RIGHT JOIN
 - Returns all rows from the right table and matching rows from the left table (NULL if no match).
 - Used when: We want all records from the right table, even if there's no match in the left table.
 
@@ -28,7 +28,7 @@
         FROM students
         RIGHT JOIN classes ON students.class_id = classes.class_id;
 
-4. FULL JOIN (Not directly supported in MySQL)
+### 4. FULL JOIN (Not directly supported in MySQL)
 - Returns all rows from both tables (NULL for unmatched rows).
 - Used when: We need all data from both tables, even if no match exists.
 
