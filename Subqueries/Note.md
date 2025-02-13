@@ -13,7 +13,7 @@ A subquery is a query inside another query. It is enclosed in parentheses and us
 
 ✔ HAVING clauses
 
-📌 1. Subquery in WHERE Clause
+### 📌 1. Subquery in WHERE Clause
 
 Find users whose salary is higher than the average salary:
 
@@ -26,7 +26,7 @@ Find users whose salary is higher than the average salary:
 - The subquery calculates the average salary.
 - The main query selects users with salaries above that average.
   
-📌 2. Subquery in SELECT Statement
+### 📌 2. Subquery in SELECT Statement
 
 Find each employee’s salary and how it compares to the company’s average salary:
 
@@ -39,7 +39,7 @@ Find each employee’s salary and how it compares to the company’s average sal
 - The subquery calculates the average salary.
 - The main query retrieves each employee’s salary alongside the average salary.
 
-📌 3. Subquery in FROM Clause (Derived Table)
+### 📌 3. Subquery in FROM Clause (Derived Table)
 
 Find employees with the highest salary per department:
 
@@ -52,7 +52,7 @@ Find employees with the highest salary per department:
 - The subquery (temp_table) extracts department and salary.
 - The main query groups data by department and finds the maximum salary.
 
-📌 4. Subquery in HAVING Clause
+### 📌 4. Subquery in HAVING Clause
 
 Find departments where the average salary is greater than the overall company average salary
 
@@ -68,7 +68,7 @@ Find departments where the average salary is greater than the overall company av
 - The subquery finds the overall average salary.
 - The main query filters departments where the average is higher than that value.
 
-📌 5. EXISTS vs. IN in Subqueries
+### 📌 5. EXISTS vs. IN in Subqueries
 
 ✅ Using IN (for Matching a List)
 
@@ -96,7 +96,7 @@ Find employees who have at least one bonus recorded in another table:
 - The subquery checks if a matching employee_id exists in the bonuses table.
 - The main query selects only employees with a recorded bonus.
 
-📌 6. ANY and ALL with Subqueries
+### 📌 6. ANY and ALL with Subqueries
 
 ✅ Using ANY (At Least One Match)
 Find employees whose salary is greater than at least one manager's salary:
@@ -124,7 +124,7 @@ Find employees earning more than all managers:
 - The main query finds employees earning more than the highest manager salary.
 
 
-🚀 Summary
+### 🚀 Summary
 
 ✔ Subqueries are used to nest one query inside another
 
