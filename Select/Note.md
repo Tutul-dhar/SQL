@@ -60,3 +60,30 @@ Basic Syntax:
 9. Filtering Numeric Data
 
         WHERE column_name >= value → Filters rows where the column's value is greater than or equal to a given number.
+
+   ### COUNT() Function in MySQL
+
+The `COUNT()` function is used to count the number of rows that match a specified condition or to count non-NULL values in a column.
+
+Syntax:
+
+1. Count All Rows:
+
+        COUNT(*)
+- Returns the total number of rows in the table or group.
+
+2. Count Non-NULL Values:
+
+        COUNT(column_name)
+- Returns the number of non-NULL values in the specified column.
+
+3. COUNT with GROUP BY: We can also use COUNT() with GROUP BY to count occurrences of different values in a column.
+
+        SELECT class_id, COUNT(*) AS num_students
+        FROM students
+        GROUP BY class_id;
+### When to Use COUNT():
+
+- Counting Total Rows: To count the total number of records in a table.
+- Counting Specific Data: To count how many rows meet a specific condition or have non-NULL values.
+- Grouped Counts: To count occurrences of data in groups (using `GROUP BY`).
