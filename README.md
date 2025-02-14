@@ -1,1 +1,1 @@
-- [Select Queries](./SQL/tree/main/Select)  
+- [Select Queries](./SQL/blob/main/Select/Note.md)  
