@@ -1,1 +1,1 @@
-- [Select Queries](./tree/main/Select)  
+- [Select Queries](./SQL/tree/main/Select)  
